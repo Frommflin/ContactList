@@ -8,7 +8,7 @@
     <header>
         <h1>Din Kontaktlista</h1>
     </header>
-    <form method="post">
+    <form id="newContact" method="post">
         <h2>Ny kontakt</h2>
         <label for="name">Namn</label>
         <input type="text" name="name" placeholder="Namn">
@@ -16,7 +16,7 @@
         <input type="tel" name="phone" placeholder="012-1234567">
         <input type="submit" value="Lägg till">
     </form>
-    <div id="contacts">
+    <div>
         <h2>Sparade kontakter</h2>
         <table>
             <thead>
@@ -27,7 +27,7 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="contacts">
                 <tr id="contact1">
                     <td>
                         <input type="text" name="name1" value="Namn Namnson" disabled>
@@ -61,5 +61,6 @@
         </table>
         <div id="contact1"></div>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
