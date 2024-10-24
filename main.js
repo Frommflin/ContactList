@@ -24,3 +24,29 @@ document.getElementById("newContact").addEventListener("submit", function(){
     document.getElementById("contacts").innerHTML += str;
     document.getElementById("newContact").reset();
 });
+
+let edits = document.getElementsByClassName("edit");
+for (let i = 1; i < edits.length; i++) {
+    document.getElementById("edit"+i).addEventListener("click", function(){
+        //Enable textfields relating to chosen contact
+        document.querySelector("input[name='name"+1+"']").disabled = false;
+        document.querySelector("input[name='phone"+1+"']").disabled = false;
+
+        //Switch visible button for editing
+        document.getElementById("edit"+i).style.display = "none";
+        document.getElementById("save"+i) .style.display = "block";
+    });
+}
+
+let saveEdits = document.getElementsByClassName("save");
+for (let i = 1; i < saveEdits.length; i++) {
+    document.getElementById("save"+i).addEventListener("click", function(){
+        //Enable textfields relating to chosen contact
+        document.querySelector("input[name='name"+1+"']").disabled = true;
+        document.querySelector("input[name='phone"+1+"']").disabled = true;
+
+        //Switch visible button for editing
+        document.getElementById("edit"+i).style.display = "block";
+        document.getElementById("save"+i) .style.display = "none";
+    });
+}
