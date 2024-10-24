@@ -1,4 +1,4 @@
-let contactId = 2;
+let contactId = 0;
 
 document.getElementById("newContact").addEventListener("submit", function(){ 
     event.preventDefault();
