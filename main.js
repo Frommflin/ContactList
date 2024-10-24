@@ -41,12 +41,19 @@ for (let i = 1; i < edits.length; i++) {
 let saveEdits = document.getElementsByClassName("save");
 for (let i = 1; i < saveEdits.length; i++) {
     document.getElementById("save"+i).addEventListener("click", function(){
-        //Enable textfields relating to chosen contact
+        //Disable textfields relating to chosen contact
         document.querySelector("input[name='name"+1+"']").disabled = true;
         document.querySelector("input[name='phone"+1+"']").disabled = true;
 
         //Switch visible button for editing
         document.getElementById("edit"+i).style.display = "block";
         document.getElementById("save"+i) .style.display = "none";
+    });
+}
+
+let deletes = document.getElementsByClassName("delete");
+for (let i = 1; i < deletes.length; i++) {
+    document.getElementById("delete"+i).addEventListener("click", function(){
+        document.getElementById("contact"+i).remove();
     });
 }
