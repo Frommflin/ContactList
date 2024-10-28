@@ -53,3 +53,7 @@ function saveChanges(id){
 function removeContact(id){
     document.getElementById("contact" + id).remove();
 }
+
+function deleteList(){
+    document.getElementById("contacts").innerHTML = "";
+}
