@@ -1,3 +1,6 @@
 .save{
     display: none;
 }
+.error{
+    color: red;
+}
