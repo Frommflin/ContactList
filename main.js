@@ -20,18 +20,18 @@ function addNewContact(name,phone){
     let str = ``;
 
     str += `<tr id="contact${contactId}">`;
-    str += `<td>`;
-    str += `<input type="text" name="name${contactId}" value="${name}" disabled>`;
+    str += `<td class="inputCol">`;
+    str += `<input type="text" class="form-control" name="name${contactId}" value="${name}" disabled>`;
     str += `</td>`;
-    str += `<td>`;
-    str += `<input type="tel" name="phone${contactId}" value="${phone}" disabled>`;
+    str += `<td class="inputCol">`;
+    str += `<input type="tel" class="form-control" name="phone${contactId}" value="${phone}" disabled>`;
     str += `</td>`;
-    str += `<td>`;
-    str += `<button id="edit${contactId}" class="edit" onclick="editContact(${contactId})">Redigera</button>`;
-    str += `<button id="save${contactId}" class="save" onclick="saveChanges(${contactId})">Spara</button>`;
+    str += `<td class="btnCol">`;
+    str += `<button id="edit${contactId}" class="edit btn btn-warning" onclick="editContact(${contactId})">Redigera</button>`;
+    str += `<button id="save${contactId}" class="save btn btn-success" onclick="saveChanges(${contactId})">Spara</button>`;
     str += `</td>`;
-    str += `<td>`;
-    str += `<button id="delete${contactId}" class="delete" onclick="removeContact(${contactId})">Ta bort</button>`;
+    str += `<td class="btnCol">`;
+    str += `<button id="delete${contactId}" class="delete btn btn-danger" onclick="removeContact(${contactId})">Ta bort</button>`;
     str += `</td>`;
 
     document.getElementById("contacts").innerHTML += str;

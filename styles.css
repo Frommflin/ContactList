@@ -4,3 +4,31 @@
 .error{
     color: red;
 }
+.section{
+    margin: 40px 20px;
+}
+#newContact{
+    width: 500px;
+}
+#add{
+    margin-top: 10px;
+}
+.input-group-text{
+    width: 80px;
+}
+#title{
+    display: inline;
+    margin-right: 30px;
+}
+table{
+    margin-top: 15px;
+}
+.inputCol{
+    width: 210px;
+}
+.btnCol{
+    width: 90px;
+}
+#contacts td{
+    padding-bottom: 5px;
+}
